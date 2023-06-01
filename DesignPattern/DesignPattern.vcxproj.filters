@@ -34,6 +34,21 @@
     <Filter Include="Command">
       <UniqueIdentifier>{b120c9d1-f805-4eec-acd7-7703a5638870}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ObjectAdapter">
+      <UniqueIdentifier>{63f4ac28-7cb2-43b0-999b-0730f9e7030c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassAdapter">
+      <UniqueIdentifier>{e6c91c9c-cb7e-4e02-9b41-33c47f7fc548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookOnTemplateMethod">
+      <UniqueIdentifier>{f4729675-2fa8-4007-aa8d-a9d92c22d999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Composite">
+      <UniqueIdentifier>{f5513118-5611-4fc2-acd3-d17a0de22145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{a40d7e69-16db-4dc7-9459-278b983d0434}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DesignPattern.cpp">
@@ -131,6 +146,39 @@
     </ClCompile>
     <ClCompile Include="MultiControlCommand.cpp">
       <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="OldMallardDuck.cpp">
+      <Filter>ObjectAdapter</Filter>
+    </ClCompile>
+    <ClCompile Include="WildTurkey.cpp">
+      <Filter>ObjectAdapter</Filter>
+    </ClCompile>
+    <ClCompile Include="TurkeyAdapter.cpp">
+      <Filter>ObjectAdapter</Filter>
+    </ClCompile>
+    <ClCompile Include="ClsAdapter.cpp">
+      <Filter>ClassAdapter</Filter>
+    </ClCompile>
+    <ClCompile Include="CoffeeWithHook.cpp">
+      <Filter>HookOnTemplateMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="TeaWithHook.cpp">
+      <Filter>HookOnTemplateMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="BumballMachine.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="NoQuaterState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="HasQuarterState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="SoldState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="SoldOutState.cpp">
+      <Filter>State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +292,57 @@
     </ClInclude>
     <ClInclude Include="MultiControlCommand.h">
       <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="OAInterfaceUtil.h">
+      <Filter>ObjectAdapter</Filter>
+    </ClInclude>
+    <ClInclude Include="OldMallardDuck.h">
+      <Filter>ObjectAdapter</Filter>
+    </ClInclude>
+    <ClInclude Include="WildTurkey.h">
+      <Filter>ObjectAdapter</Filter>
+    </ClInclude>
+    <ClInclude Include="TurkeyAdapter.h">
+      <Filter>ObjectAdapter</Filter>
+    </ClInclude>
+    <ClInclude Include="ClsAdapter.h">
+      <Filter>ClassAdapter</Filter>
+    </ClInclude>
+    <ClInclude Include="CaffeineBeverageWithHook.h">
+      <Filter>HookOnTemplateMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="CoffeeWithHook.h">
+      <Filter>HookOnTemplateMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="TeaWithHook.h">
+      <Filter>HookOnTemplateMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuComponent.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItem.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="BumballMachine.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="NoQuaterState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="HasQuarterState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="SoldState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="SoldOutState.h">
+      <Filter>State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

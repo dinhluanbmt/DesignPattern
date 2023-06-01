@@ -19,6 +19,22 @@
 #include "RemoteControl.h"
 #include "RemoteLoader.h"
 
+#include "OldMallardDuck.h"
+#include "WildTurkey.h"
+#include "TurkeyAdapter.h"
+#include "ClsAdapter.h"
+
+#include "CaffeineBeverageWithHook.h"
+#include "CoffeeWithHook.h"
+#include "TeaWithHook.h"
+
+#include "MenuComponent.h"
+#include "Menu.h"
+#include "MenuItem.h"
+
+#include "BumballMachine.h"
+
+
 void testSimpleUDuck() {
     shared_ptr<Duck> mallardD(new MallardDuck());
     mallardD->swim();
@@ -101,9 +117,71 @@ void testRemoteControl() {
     cout << "--------------" << endl;
     rmCtrl->onButtonUndoPushed();
 }
-int main() {
+void testObjectAdapter() {
+    shared_ptr<TDuck> omallardDuck(new OldMallardDuck());
+    shared_ptr<ATurkey> turkey(new WildTurkey());
+    shared_ptr<TDuck> turkeyAdapter(new TurkeyAdapter(turkey));
     
-    testRemoteControl();
+    omallardDuck->quack();
+    omallardDuck->fly();
+    cout << "//-----------//" << endl;
+
+    turkeyAdapter->quack();
+    turkeyAdapter->fly();   
+}
+
+void testClassAdapter() {
+    shared_ptr<TDuck> cls_AdapterDuck(new ClsAdapter());
+    cls_AdapterDuck->quack();
+    cls_AdapterDuck->fly();
+}
+
+void testTemplateMethodWithHook() {
+    shared_ptr<CaffeineBeverageWithHook> coffe(new CoffeeWithHook());
+    coffe->perepareRecipe();
+    cout << "//--------------//" << endl;
+    shared_ptr<CaffeineBeverageWithHook> tea(new TeaWithHook());
+    tea->perepareRecipe();
+}
+
+void testMenuComponentComposite() {
+    shared_ptr<MenuComponent> pancakeHouseMenu(new Menu("PANCAKE HOUSE MENU", "Breakfast"));
+    shared_ptr<MenuComponent> dinnerMenu(new Menu("LUNCH MENU", "Lunch"));
+    shared_ptr<MenuComponent> cafeMenu(new Menu("CAFE MENU", "Cafe"));
+
+    shared_ptr<MenuComponent> allMenus(new Menu("ALL MENUS", "All menus combined"));
+    allMenus->add(pancakeHouseMenu);
+    allMenus->add(dinnerMenu);
+    allMenus->add(cafeMenu);
+
+
+    pancakeHouseMenu->add(shared_ptr<MenuComponent>(new MenuItem("pancake", "baked pancake", true, 2.45)));
+    dinnerMenu->add(shared_ptr<MenuComponent>(new MenuItem("Pasta", "Spaghetti with Marinara sauce...", true, 3.89)));
+    cafeMenu->add(shared_ptr<MenuComponent>(new MenuItem("Apple Pie", "Applie Pie with flakey crust, topped with vanilla icecream", true, 1.59)));
+
+    allMenus->print();
+}
+
+void testGumballMachine() {
+    shared_ptr<GumballMachine> gb_Machine(new GumballMachine(2));
+    gb_Machine->setMachine2State(gb_Machine);
+    gb_Machine->insertQuarter();
+    gb_Machine->ejectQuarter();
+    gb_Machine->insertQuarter();
+    gb_Machine->turnCrank();
+    gb_Machine->turnCrank();
+
+    gb_Machine->insertQuarter();
+    gb_Machine->turnCrank();
+    gb_Machine->ejectQuarter();
+
+    gb_Machine->insertQuarter();
+    
+}
+
+int main() {
+
+ testGumballMachine();    
     return 0;
 }
 

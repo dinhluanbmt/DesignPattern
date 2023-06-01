@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BumballMachine.cpp" />
     <ClCompile Include="ChicagoIngredientsFactory.cpp" />
+    <ClCompile Include="ClsAdapter.cpp" />
+    <ClCompile Include="CoffeeWithHook.cpp" />
     <ClCompile Include="CurrentConditionDisplay.cpp" />
     <ClCompile Include="DarkRoast.cpp" />
     <ClCompile Include="DesignPattern.cpp" />
@@ -149,6 +152,7 @@
     <ClCompile Include="FlyNoWings.cpp" />
     <ClCompile Include="FlyWithWings.cpp" />
     <ClCompile Include="ForecastDisplay.cpp" />
+    <ClCompile Include="HasQuarterState.cpp" />
     <ClCompile Include="HouseBlend.cpp" />
     <ClCompile Include="LightControlCommand.cpp" />
     <ClCompile Include="MallardDuck.cpp" />
@@ -157,8 +161,10 @@
     <ClCompile Include="MozzarellaCheese.cpp" />
     <ClCompile Include="MultiControlCommand.cpp" />
     <ClCompile Include="MuteQuack.cpp" />
+    <ClCompile Include="NoQuaterState.cpp" />
     <ClCompile Include="NYIngredientsFactory.cpp" />
     <ClCompile Include="NYPizzaStore.cpp" />
+    <ClCompile Include="OldMallardDuck.cpp" />
     <ClCompile Include="Quack.cpp" />
     <ClCompile Include="ReggianoCheese.cpp" />
     <ClCompile Include="RemoteControl.cpp" />
@@ -166,15 +172,24 @@
     <ClCompile Include="SDarkRoast.cpp" />
     <ClCompile Include="Singleton.cpp" />
     <ClCompile Include="SMocha.cpp" />
+    <ClCompile Include="SoldOutState.cpp" />
+    <ClCompile Include="SoldState.cpp" />
     <ClCompile Include="Squeak.cpp" />
+    <ClCompile Include="TeaWithHook.cpp" />
     <ClCompile Include="ThickDough.cpp" />
     <ClCompile Include="ThinDough.cpp" />
     <ClCompile Include="TomatoSauce.cpp" />
+    <ClCompile Include="TurkeyAdapter.cpp" />
     <ClCompile Include="WeatherData.cpp" />
+    <ClCompile Include="WildTurkey.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BumballMachine.h" />
+    <ClInclude Include="CaffeineBeverageWithHook.h" />
     <ClInclude Include="ChicagoIngredientsFactory.h" />
     <ClInclude Include="CInterfaceUtil.h" />
+    <ClInclude Include="ClsAdapter.h" />
+    <ClInclude Include="CoffeeWithHook.h" />
     <ClInclude Include="CurrentConditionDisplay.h" />
     <ClInclude Include="DarkRoast.h" />
     <ClInclude Include="DoorControlCommand.h" />
@@ -183,6 +198,7 @@
     <ClInclude Include="FlyNoWings.h" />
     <ClInclude Include="FlyWithWings.h" />
     <ClInclude Include="ForecastDisplay.h" />
+    <ClInclude Include="HasQuarterState.h" />
     <ClInclude Include="HouseBlend.h" />
     <ClInclude Include="IBeverage.h" />
     <ClInclude Include="Ingredients.h" />
@@ -190,12 +206,18 @@
     <ClInclude Include="LightControlCommand.h" />
     <ClInclude Include="MallardDuck.h" />
     <ClInclude Include="MarianaSauce.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuComponent.h" />
+    <ClInclude Include="MenuItem.h" />
     <ClInclude Include="Mocha.h" />
     <ClInclude Include="MozzarellaCheese.h" />
     <ClInclude Include="MultiControlCommand.h" />
     <ClInclude Include="MuteQuack.h" />
+    <ClInclude Include="NoQuaterState.h" />
     <ClInclude Include="NYIngredientsFactory.h" />
     <ClInclude Include="NYPizzaStore.h" />
+    <ClInclude Include="OAInterfaceUtil.h" />
+    <ClInclude Include="OldMallardDuck.h" />
     <ClInclude Include="Quack.h" />
     <ClInclude Include="ReggianoCheese.h" />
     <ClInclude Include="RemoteControl.h" />
@@ -205,11 +227,17 @@
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SMocha.h" />
     <ClInclude Include="SOInterface.h" />
+    <ClInclude Include="SoldOutState.h" />
+    <ClInclude Include="SoldState.h" />
     <ClInclude Include="Squeak.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="TeaWithHook.h" />
     <ClInclude Include="ThickDough.h" />
     <ClInclude Include="ThinDough.h" />
     <ClInclude Include="TomatoSauce.h" />
+    <ClInclude Include="TurkeyAdapter.h" />
     <ClInclude Include="WeatherData.h" />
+    <ClInclude Include="WildTurkey.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
