@@ -4,4 +4,9 @@
  + Decorator Pattern
  + Factory Pattern
  + Singleton Pattern
- + ...will be updated..
+ + Command Pattern
+ + Adapter and Facade Patterns
+ + Template Method Pattern
+ + Composite Patterns
+ + State Pattern
+ + Compound Patterns
