@@ -49,6 +49,9 @@
     <Filter Include="State">
       <UniqueIdentifier>{a40d7e69-16db-4dc7-9459-278b983d0434}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CompoundPatterns">
+      <UniqueIdentifier>{ec242b60-df0d-4248-8b39-c317460f2fbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DesignPattern.cpp">
@@ -343,6 +346,42 @@
     </ClInclude>
     <ClInclude Include="SoldOutState.h">
       <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="Quackable.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPMallardDuck.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPRedheadDuck.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPDuckCall.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPRubberDuck.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPDuckSimulator.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPGoose.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPGooseAdapter.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPQuackCounter.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPAbstractFactory.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPDuckFactory.h">
+      <Filter>CompoundPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="CPCountingDuckFactory.h">
+      <Filter>CompoundPatterns</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

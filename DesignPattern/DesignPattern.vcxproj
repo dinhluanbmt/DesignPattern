@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -184,12 +184,24 @@
     <ClCompile Include="WildTurkey.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BeatModel.h" />
     <ClInclude Include="BumballMachine.h" />
     <ClInclude Include="CaffeineBeverageWithHook.h" />
     <ClInclude Include="ChicagoIngredientsFactory.h" />
     <ClInclude Include="CInterfaceUtil.h" />
     <ClInclude Include="ClsAdapter.h" />
     <ClInclude Include="CoffeeWithHook.h" />
+    <ClInclude Include="CPAbstractFactory.h" />
+    <ClInclude Include="CPCountingDuckFactory.h" />
+    <ClInclude Include="CPDuckCall.h" />
+    <ClInclude Include="CPDuckFactory.h" />
+    <ClInclude Include="CPDuckSimulator.h" />
+    <ClInclude Include="CPGoose.h" />
+    <ClInclude Include="CPGooseAdapter.h" />
+    <ClInclude Include="CPMallardDuck.h" />
+    <ClInclude Include="CPQuackCounter.h" />
+    <ClInclude Include="CPRedheadDuck.h" />
+    <ClInclude Include="CPRubberDuck.h" />
     <ClInclude Include="CurrentConditionDisplay.h" />
     <ClInclude Include="DarkRoast.h" />
     <ClInclude Include="DoorControlCommand.h" />
@@ -210,6 +222,7 @@
     <ClInclude Include="MenuComponent.h" />
     <ClInclude Include="MenuItem.h" />
     <ClInclude Include="Mocha.h" />
+    <ClInclude Include="ModelInterface.h" />
     <ClInclude Include="MozzarellaCheese.h" />
     <ClInclude Include="MultiControlCommand.h" />
     <ClInclude Include="MuteQuack.h" />
@@ -219,6 +232,7 @@
     <ClInclude Include="OAInterfaceUtil.h" />
     <ClInclude Include="OldMallardDuck.h" />
     <ClInclude Include="Quack.h" />
+    <ClInclude Include="Quackable.h" />
     <ClInclude Include="ReggianoCheese.h" />
     <ClInclude Include="RemoteControl.h" />
     <ClInclude Include="RemoteLoader.h" />

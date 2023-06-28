@@ -34,6 +34,8 @@
 
 #include "BumballMachine.h"
 
+#include "CPDuckSimulator.h"
+
 
 void testSimpleUDuck() {
     shared_ptr<Duck> mallardD(new MallardDuck());
@@ -179,9 +181,18 @@ void testGumballMachine() {
     
 }
 
+
+void testCPDuckSimulator() {
+    CPDuckSimulator cpS;
+    //cpS.simulate();
+    //cpS.simulate_count_quack();
+    cpS.simulate_count_factory();
+}
+
 int main() {
 
- testGumballMachine();    
+ //testGumballMachine();    
+    testCPDuckSimulator();
     return 0;
 }
 
